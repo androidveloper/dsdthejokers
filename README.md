@@ -1,2 +1,2 @@
 # dsdthejokers
-UPC - Diseño de Sistemas Distruibuidos - Trabajo grupal - Grupo thejokers
+UPC - Diseño de Sistemas Distruibuidos - Grupo thejokers
