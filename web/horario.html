@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html >
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+	
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Poppins:700" rel="stylesheet" />
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/bootstrap-grid.min.css" rel="stylesheet" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/calendario.js"></script>
+	<link href="css/calendario.css" rel="stylesheet" type="text/css" media="all" />
+	 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+ <script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+	 
+	 <!-- start menu -->     
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<!-- end menu -->
+  </head>
+
+<body>
+
+  <div class="header-top">
+	 <div class="wrap"> 
+		<div class="logo">
+			<a href="index.html"><img src="images/logo1.png" alt=""/></a>
+	    </div>
+	    <div class="cssmenu">
+		   <ul>
+			 <li class="active"><a href="register.html">Registrarse</a></li> 
+			   
+			 <li><a href="login.html">Mi cuenta</a></li> 
+			  
+		   </ul>
+		</div>
+
+		<div class="clear"></div>
+ 	</div>
+   </div>
+   
+      <div class="header-bottom">
+   	<div class="wrap">
+   		<!-- start header menu -->
+		<ul class="megamenu skyblue">
+		    <li><a class="color1" href="#">Home</a></li>
+			<li class="grid"><a class="color2" href="#">Buscar Canchas</a>
+				
+				</li>
+  			   <li class="active grid"><a class="color4" href="#">Contactanos</a>
+				
+    			</li>				
+								
+				
+				<!--<li><a class="color9" href="#">Football</a>
+				
+				</li>
+				<li><a class="color10" href="#">Running</a></li>
+				<li><a class="color11" href="#">Originals</a></li>
+				<li><a class="color12" href="#">Basketball</a></li> -->
+		   </ul>
+		   <div class="clear"></div>
+     	</div>
+       </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">Hora</div>
+    <div class="col-md-4">Estado</div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">07:00-08:00 </div>
+    <div class="col-md-4"> <span> <button onclick="window.location.href='reserva.html'"> Reservar</button> </span> </div>
+  </div>
+   <div class="row">
+    <div class="col-md-2">08:00-09:00 </div>
+    <div class="col-md-4"> <span> reservado </span> </div>
+  </div>
+   <div class="row">
+    <div class="col-md-2">09:00-10:00 </div>
+    <div class="col-md-4"> <span> reservado </span> </div>
+  </div>
+   <div class="row">
+    <div class="col-md-2">10:00-11:00</div>
+    <div class="col-md-4"> <span> <span> <button onclick="window.location.href='reserva.html'"> Reservar</button>  </span> </div>
+  </div>
+   <div class="row">
+    <div class="col-md-2">11:00-12:00</div>
+    <div class="col-md-4"> <span> reservado </span> </div>
+  </div>
+   <div class="row">
+    <div class="col-md-2">12:00-13:00 </div>
+    <div class="col-md-4"> <span> reservado </span> </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">14:00-15:00 </div>
+    <div class="col-md-4"> <span> <span> <button onclick="window.location.href='reserva.html'"> Reservar</button>  </span> </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-2">15:00-16:00 </div>
+    <div class="col-md-4"> <span> reservado </span> </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-2">16:00-17:00 </div>
+    <div class="col-md-4"> <span> <span> <button onclick="window.location.href='reserva.html'"> Reservar</button>  </span> </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-2">17:00-18:00 </div>
+    <div class="col-md-4"> <span> reservado </span> </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-2">19:00-20:00 </div>
+    <div class="col-md-4"> <span> <span> <button onclick="window.location.href='reserva.html'"> Reservar</button>  </span> </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">21:00-22:00 </div>
+    <div class="col-md-4"> <span> reservado </span> </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">23:00-24:00 </div>
+    <div class="col-md-4"> <span> reservado </span> </div>
+  </div>
+  
+  
+</div>
+
+</body>
+
+</html>
